@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background: radial-gradient(circle, #E56B6FFF 10%, #B56576FF 30%, #6D597AFF 60%, #355070FF 100%);
+  background-color: #783d81;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-button {
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #2a9d8fff), color-stop(50%, #e9c46aff), color-stop(90%, #f4a261ff));
+  background: linear-gradient(180deg, #2a9d8fff 10%, #e9c46aff 50%, #f4a261ff 90%);
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFB;
+  z-index: 2;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-text {
+  font-family: 'Lobster', cursive;
+  font-size: 4vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.obj1 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj1 {
+  background-color: #264653ff;
+  -webkit-transform: translate(0vw, -18vw);
+          transform: translate(0vw, -18vw);
+}
+
+.obj2 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj2 {
+  background-color: #2a9d8fff;
+  -webkit-transform: translate(12.72vw, -12.72vw);
+          transform: translate(12.72vw, -12.72vw);
+}
+
+.obj3 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj3 {
+  background-color: #e9c46aff;
+  -webkit-transform: translate(18vw, 0vw);
+          transform: translate(18vw, 0vw);
+}
+
+.obj4 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj4 {
+  background-color: #f4a261ff;
+  -webkit-transform: translate(12.72vw, 12.72vw);
+          transform: translate(12.72vw, 12.72vw);
+}
+
+.obj5 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj5 {
+  background-color: #e76f51ff;
+  -webkit-transform: translate(0vw, 18vw);
+          transform: translate(0vw, 18vw);
+}
+
+.obj6 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj6 {
+  background-color: #f4a261ff;
+  -webkit-transform: translate(-12.72vw, 12.72vw);
+          transform: translate(-12.72vw, 12.72vw);
+}
+
+.obj7 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj7 {
+  background-color: #e9c46aff;
+  -webkit-transform: translate(-18vw, 0vw);
+          transform: translate(-18vw, 0vw);
+}
+
+.obj8 {
+  -webkit-transition-delay: 0.01s;
+          transition-delay: 0.01s;
+}
+
+.menu-opened > .obj8 {
+  background-color: #2a9d8fff;
+  -webkit-transform: translate(-12.72vw, -12.72vw);
+          transform: translate(-12.72vw, -12.72vw);
+}
+
+.menu-opened > * > .child-text {
+  -webkit-transition-duration: inherit;
+          transition-duration: inherit;
+  color: #FFFFFB;
+}
+
+.menu-opened > *:hover {
+  cursor: pointer;
+}
+
+.child-text {
+  color: transparent;
+  font-family: 'Lobster', cursive;
+  font-size: 4vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  background-color: transparent;
+  width: 10vw;
+  height: 10vw;
+  border: 0px solid transparent;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=styles-main.css.map */

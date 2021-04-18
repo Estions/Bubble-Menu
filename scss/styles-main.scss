@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+$bg-gradient : radial-gradient(circle, #E56B6FFF 10%, #B56576FF 30%, #6D597AFF 60%, #355070FF 100%);
+$bg-color : rgba(120,61,129,1);
+
+$color1: #264653ff;
+$color2: #2a9d8fff;
+$color3: #e9c46aff;
+$color4: #f4a261ff;
+$color5: #e76f51ff;
+
+$menu-button : linear-gradient(180deg, $color2 10%, $color3 50%, $color4 90%);
+
+$text-color : #FFFFFB;
+
+
+$range: 18vw;
+$randediag : 12.72vw;
+$delay : 0.01s;
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background: $bg-gradient;
+    background-color: $bg-color;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.menu-button{
+
+    transition-duration: .25s;
+
+    display: flex;
+
+    width: 25vw;
+    height: 25vw;
+
+    border: 0px solid transparent;
+    border-radius: 50%;
+
+    background: $menu-button;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color: $text-color;
+    z-index: 2;
+}
+
+.menu-button:hover{
+    cursor : pointer;
+}
+
+.menu-text{
+    font-family: 'Lobster', cursive;
+    font-size: 4vw;
+    user-select: none;
+}
+
+.obj1{transition-delay: $delay;}
+.menu-opened > .obj1 {background-color: $color1;transform: translate( 00.00vw,-$range);} 
+
+.obj2{transition-delay: $delay;}
+.menu-opened > .obj2 {background-color: $color2;transform: translate( $randediag,-$randediag);}
+
+.obj3{transition-delay: $delay;}
+.menu-opened > .obj3 {background-color: $color3;transform: translate( $range, 00.00vw);} 
+
+.obj4{transition-delay: $delay;}
+.menu-opened > .obj4 {background-color: $color4;transform: translate( $randediag, $randediag);}
+
+.obj5{transition-delay: $delay;}
+.menu-opened > .obj5 {background-color: $color5;transform: translate( 00.00vw, $range);} 
+
+.obj6{transition-delay: $delay;}
+.menu-opened > .obj6 {background-color: $color4;transform: translate(-$randediag, $randediag);}
+
+.obj7{transition-delay: $delay;}
+.menu-opened > .obj7 {background-color: $color3;transform: translate(-$range, 00.00vw);} 
+
+.obj8{transition-delay: $delay;}
+.menu-opened > .obj8 {background-color: $color2;transform: translate(-$randediag,-$randediag);}
+
+.menu-opened > * >.child-text{
+    transition-duration: inherit;
+    color: $text-color;
+}
+
+.menu-opened > *:hover{
+cursor: pointer;
+}
+
+.child-text{
+    color: transparent;
+    font-family: 'Lobster', cursive;
+    font-size: 4vw;
+    user-select: none;
+}
+
+.menu-child{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition-duration: 0.5s;
+    position: absolute;
+
+    background-color: transparent;
+
+    width: 10vw;
+    height: 10vw;
+
+    border: 0px solid transparent;
+    border-radius: 50%;
+}
